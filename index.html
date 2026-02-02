@@ -1,97 +1,90 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8"> <!-- Tells the browser to use UTF-8 encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Research Highlights</title>
     <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
-    <section class="research">
-      <div class="research__row">
+    <!-- Header: top of the page, logo/title/navigation -->
+    <header class="site-header">
+      <h1>Research Highlights</h1>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="#environment">Environment</a></li>
+          <li><a href="#space">Space</a></li>
+          <li><a href="#ai">AI & Robotics</a></li>
+        </ul>
+      </nav>
+    </header>
 
-        <!-- Card 1 -->
-        <article class="research-card">
-          <img
-            src="images/image1.png"
-            alt="Landscape"
-            class="research-card__image"
-          />
+    <!-- Main content: only one per page -->
+    <main>
+      <!-- Section: grouping related content -->
+      <section class="research" id="research-highlights">
+        <h2>Latest Research</h2>
 
-          <p class="research-card__date">7 Jan 2025</p>
+        <div class="research__row">
 
-          <h3 class="research-card__title">
-            Linking diamonds with landscape evolution
-          </h3>
+          <!-- Article: standalone content -->
+          <article class="research-card" id="environment">
+            <img src="images/image1.png" alt="Landscape" class="research-card__image">
+            <p class="research-card__date">7 Jan 2025</p>
+            <h3 class="research-card__title">Linking diamonds with landscape evolution</h3>
+            <p class="research-card__description">
+              Researchers are solving one of the most puzzling questions in plate tectonics, by investigating how the Earth's surface has responded to the breakup of continental plates through time.
+            </p>
+            <div class="research-card__tags">
+              <span class="research-card__tag">Environment, sustainability and clean growth</span>
+              <span class="research-card__tag">Marine and maritime</span>
+            </div>
+          </article>
 
-          <p class="research-card__description">
-            Researchers are solving one of the most puzzling questions in plate
-            tectonics, by investigating how the Earth's surface has responded to
-            the breakup of continental plates through time.
-          </p>
+          <article class="research-card" id="space">
+            <img src="images/image2.png" alt="Galaxy" class="research-card__image">
+            <p class="research-card__date">7 Jan 2025</p>
+            <h3 class="research-card__title">Revealing space’s secret supermassive black holes</h3>
+            <p class="research-card__description">
+              Scientists from the University of Southampton have found that there are more hidden supermassive black holes in the universe than previously thought.
+            </p>
+            <div class="research-card__tags">
+              <span class="research-card__tag">Space</span>
+            </div>
+          </article>
 
-          <div class="research-card__tags">
-            <span class="research-card__tag">
-              Environment, sustainability and clean growth
-            </span>
-            <span class="research-card__tag">
-              Marine and maritime
-            </span>
-          </div>
-        </article>
+          <article class="research-card" id="ai">
+            <img src="images/image3.png" alt="Robot" class="research-card__image">
+            <p class="research-card__date">7 Jan 2025</p>
+            <h3 class="research-card__title">Can robots and migration help address the challenges of ageing?</h3>
+            <p class="research-card__description">
+              Research by Southampton demographers has explored strategies to best address skills shortages caused by ageing and whether migration and the use of robotics can help alleviate some of the resulting pressures.
+            </p>
+            <div class="research-card__tags">
+              <span class="research-card__tag">AI, big data and analytics</span>
+              <span class="research-card__tag">Future societies and communities</span>
+            </div>
+          </article>
 
-        <!-- Card 2 -->
-        <article class="research-card">
-          <img
-            src="images/image2.png"
-            alt="Galaxy"
-            class="research-card__image"
-          />
+        </div>
 
-          <p class="research-card__date">7 Jan 2025</p>
+        <!-- Optional aside for extra info -->
+        <aside class="research__sidebar">
+          <h3>Related Topics</h3>
+          <ul>
+            <li>Climate Change</li>
+            <li>Space Exploration</li>
+            <li>Artificial Intelligence</li>
+          </ul>
+        </aside>
+      </section>
+    </main>
 
-          <h3 class="research-card__title">
-            Revealing space’s secret supermassive black holes
-          </h3>
-
-          <p class="research-card__description">
-            Scientists from the University of Southampton have found that there
-            are more hidden supermassive black holes in the universe than
-            previously thought.
-          </p>
-
-          <div class="research-card__tags">
-            <span class="research-card__tag">Space</span>
-          </div>
-        </article>
-
-        <!-- Card 3 -->
-        <article class="research-card">
-          <img
-            src="images/image3.png"
-            alt="Robot"
-            class="research-card__image"
-          />
-
-          <p class="research-card__date">7 Jan 2025</p>
-
-          <h3 class="research-card__title">
-            Can robots and migration help address the challenges of ageing?
-          </h3>
-
-          <p class="research-card__description">
-            Research by Southampton demographers has explored strategies to best
-            address skills shortages caused by ageing and whether migration and
-            the use of robotics can help alleviate some of the resulting
-            pressures.
-          </p>
-
-          <div class="research-card__tags">
-            <span class="research-card__tag">AI, big data and analytics</span>
-            <span class="research-card__tag">Future societies and communities</span>
-          </div>
-        </article>
-
-      </div>
-    </section>
+    <!-- Footer: bottom info -->
+    <footer class="site-footer">
+      <p>&copy; 2025 Research Highlights. All rights reserved.</p>
+      <p><a href="#research-highlights">Back to top</a></p>
+    </footer>
   </body>
 </html>
